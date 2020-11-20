@@ -1,0 +1,194 @@
+<html>
+    <head>
+
+ 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://omnipotent.net/jquery.sparkline/2.1.2/jquery.sparkline.min.js"></script>
+	
+	
+	
+	
+	<script type="text/javascript">
+    
+	
+	
+	function subvals(thevals)
+	{
+	var myvalues = thevals; 
+	var myvalsarr = thevals.split(",");
+	
+	
+	return myvalsarr;
+	//$("#dynamicsparkline").sparkline(myvalsarr,{type: 'line'});
+	}
+
+	function createheight(thevals1)//create graphs
+	{
+		
+		$('.dynamicsparkline1').sparkline(subvals(thevals1));
+
+	}
+	function createweight(thevals2)
+	{
+		$('.dynamicsparkline2').sparkline(subvals(thevals2));
+
+	}
+	function createbp(thevals3)
+	{
+		$('.dynamicsparkline3').sparkline(subvals(thevals3));
+
+	}
+	function createbmi(thevals4)
+	{
+		$('.dynamicsparkline4').sparkline(subvals(thevals4));
+
+	}
+
+	function createcholesterol(thevals5)
+	{
+		$('.dynamicsparkline5').sparkline(subvals(thevals5));
+
+	}
+
+	function createldl(thevals6)
+	{
+		$('.dynamicsparkline6').sparkline(subvals(thevals6));
+
+	}
+
+	function createhdl(thevals7)
+	{
+		$('.dynamicsparkline7').sparkline(subvals(thevals7));
+
+	}
+	
+	function createtriglyceride(thevals8)
+	{
+		$('.dynamicsparkline8').sparkline(subvals(thevals8));
+
+	}
+
+	function createpotassium(thevals9)
+	{
+		$('.dynamicsparkline9').sparkline(subvals(thevals9));
+
+	}
+
+	function createcreatinine(thevals10)
+	{
+		$('.dynamicsparkline10').sparkline(subvals(thevals10));
+
+	}
+
+	function createglucose(thevals11)
+	{
+		$('.dynamicsparkline11').sparkline(subvals(thevals11));
+
+	}
+
+	function createhba1c(thevals12)
+	{
+		$('.dynamicsparkline12').sparkline(subvals(thevals12));
+		
+	}
+	function createall()//create all graphs
+	{
+		var thevals1 = document.valsform.thevals1.value;
+		var thevals2 = document.valsform.thevals2.value;
+		var thevals3 = document.valsform.thevals3.value;
+		var thevals4 = document.valsform.thevals4.value;
+		var thevals5 = document.valsform.thevals5.value;
+		var thevals6 = document.valsform.thevals6.value;
+		var thevals7 = document.valsform.thevals7.value;
+		var thevals8 = document.valsform.thevals8.value;
+		var thevals9 = document.valsform.thevals9.value;
+		var thevals10 = document.valsform.thevals10.value;
+		var thevals11 = document.valsform.thevals11.value;
+		var thevals12 = document.valsform.thevals12.value;
+
+		createheight(thevals1);
+		createweight(thevals2);
+		createbp(thevals3);
+		createbmi(thevals4);
+		createcholesterol(thevals5);
+		createldl(thevals6);
+		createhdl(thevals7);
+		createtriglyceride(thevals8);
+		createpotassium(thevals9);
+		createcreatinine(thevals10);
+		createglucose(thevals11);
+		createhba1c(thevals12);
+
+	}
+
+
+
+    </script>
+</head>
+<body>
+<h1>Graph</h1>
+<form action="" name="valsform">
+
+
+Height<br><input type="text" name="thevals1">
+<span class="dynamicsparkline1">Loading..</span>
+<br><a href="javascript:createheight(document.valsform.thevals1.value);">Graphs</a>
+
+<br>Weight<br><input type="text" name="thevals2">
+<span class="dynamicsparkline2">Loading..</span>
+<br><a href="javascript:createweight(document.valsform.thevals2.value);">Graphs</a>
+
+<br>BP<br><input type="text" name="thevals3">
+<span class="dynamicsparkline3">Loading..</span>
+<br><a href="javascript:createbp(document.valsform.thevals3.value);">Graphs</a>
+
+<br>BMI<br><input type="text" name="thevals4">
+<span class="dynamicsparkline4">Loading..</span>
+<br><a href="javascript:createbmi(document.valsform.thevals4.value);">Graphs</a>
+
+<br>Cholesterol<br><input type="text" name="thevals5">
+<span class="dynamicsparkline5">Loading..</span>
+<br><a href="javascript:createcholesterol(document.valsform.thevals5.value);">Graphs</a>
+
+<br>LDL<br><input type="text" name="thevals6">
+<span class="dynamicsparkline6">Loading..</span>
+<br><a href="javascript:createldl(document.valsform.thevals6.value);">Graphs</a>
+
+<br>HDL<br><input type="text" name="thevals7">
+<span class="dynamicsparkline7">Loading..</span>
+<br><a href="javascript:createhdl(document.valsform.thevals7.value);">Graphs</a>
+
+<br>Triglyceride<br><input type="text" name="thevals8">
+<span class="dynamicsparkline8">Loading..</span>
+<br><a href="javascript:createtriglyceride(document.valsform.thevals8.value);">Graphs</a>
+
+<br>Potassium<br><input type="text" name="thevals9">
+<span class="dynamicsparkline9">Loading..</span>
+<br><a href="javascript:createpotassium(document.valsform.thevals9.value);">Graphs</a>
+
+<br>Creatinine<br><input type="text" name="thevals10">
+<span class="dynamicsparkline10">Loading..</span>
+<br><a href="javascript:createcreatinine(document.valsform.thevals10.value);">Graphs</a>
+
+<br>Glucose<br><input type="text" name="thevals11">
+<span class="dynamicsparkline11">Loading..</span>
+<br><a href="javascript:createglucose(document.valsform.thevals11.value);">Graphs</a>
+
+<br>HbA1c<br><input type="text" name="thevals12">
+<span class="dynamicsparkline12">Loading..</span>
+<br><a href="javascript:createhba1c(document.valsform.thevals12.value);">Graphs</a>
+
+<br>
+<br><a href="javascript:createall();">Create all graphs</a>
+
+
+
+</form>
+
+
+
+
+
+</body>
+</html>
+	
